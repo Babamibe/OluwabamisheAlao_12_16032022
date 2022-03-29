@@ -1,0 +1,12 @@
+.stat--daily {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    background-color: #E60000;
+    width: 39px;
+    height: 63px;
+    font-family: 'Roboto medium';
+    font-size: 7px;
+}

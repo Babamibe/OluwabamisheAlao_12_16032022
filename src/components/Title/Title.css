@@ -1,0 +1,15 @@
+.title--header {
+    font-family: 'Roboto medium', 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.title--name {
+    color: #E60000;
+}
+
+.title--text {
+    font-size: 18px;
+    font-weight: 400;
+}

@@ -1,0 +1,49 @@
+.daily-activity--section {
+    width: 835px;
+    height: 320px;
+    border-radius: 5px;
+    background-color: #FBFBFB;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+}
+
+.daily-activity--header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+    
+}
+
+.daily-activity--title {
+    font-family: 'Roboto medium';
+    font-size: 15px;
+    font-weight: 500;
+    color: #20253A;
+}
+
+.daily-activity--stats {
+    display: flex;
+    font-size: 14px;
+    color: #74798C;
+}
+
+.daily-activity--stat {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+}
+
+.daily-activity--stat > p {
+    margin-left: 10px;
+}
+
+.fa-circle {
+    font-size: 8px;
+}
+
+.dark {
+    color: #282D30;
+}
+
+.red {
+    color: #E60000;
+}

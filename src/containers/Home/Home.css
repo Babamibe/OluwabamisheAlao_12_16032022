@@ -1,0 +1,33 @@
+.main {
+    display: flex;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 60px 90px;
+}
+
+.stat--section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 77px;
+}
+
+.graphics--section {
+    display: flex;
+    flex-direction: column;
+}
+
+.chart--section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.info-card--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

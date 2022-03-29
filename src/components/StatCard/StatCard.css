@@ -1,0 +1,51 @@
+.statcard {
+    width: 258px;
+    height: 124px;
+    display: flex;
+    align-items: center;
+    background: #FBFBFB;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+    border-radius: 5px;
+}
+
+.statcard--img__container {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+    border-radius: 6px;
+    background: rgba(255, 0, 0, 0.07);
+    mix-blend-mode: normal;
+    
+}
+
+.proteine {
+    background: rgba(74, 184, 255, 0.1);
+}
+
+.glucide {
+    background: rgba(249, 206, 35, 0.1);
+}
+
+.lipide {
+    background: rgba(253, 81, 129, 0.1);
+}
+
+.statcard--img {
+    opacity: 1;
+}
+
+.statcard--info {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.statcard--category {
+    margin: 0;
+    font-family: 'Roboto medium';
+    font-size: 14px;
+    color: #74798C;
+}
