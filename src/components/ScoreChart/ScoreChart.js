@@ -2,6 +2,7 @@ import React from 'react';
 import './ScoreChart.css'
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 import GetData from '../../services/API';
+import PropTypes from 'prop-types'
 
 
 
@@ -45,4 +46,9 @@ export default function ScoreChart({userId}) {
             <p className='scorechart--text'><span className='scorechart--score'>{`${score *100}%`}</span> <br/> de votre <br/> objectif</p>
         </div>
     );
+}
+
+ScoreChart.propTypes = {
+    score : PropTypes.array,
+    userId : PropTypes.string
 }

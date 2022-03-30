@@ -2,6 +2,7 @@ import React from 'react';
 import './AverageSessionChart.css';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import GetData from '../../services/API';
+import PropTypes from 'prop-types'
 
 
 const customTooltip = ({active, payload}) => {
@@ -66,4 +67,9 @@ const customTooltip = ({active, payload}) => {
     
         </div>
     );
+}
+
+AverageSessionChart.propTypes = {
+  sessions : PropTypes.array,
+  userId : PropTypes.string
 }

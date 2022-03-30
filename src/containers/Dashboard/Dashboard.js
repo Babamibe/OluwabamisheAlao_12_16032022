@@ -5,6 +5,7 @@ import ActivityTypeChart from "../../components/ActivityTypeChart/ActivityTypeCh
 import DailyActivity from "../../components/DailyActivity/DailyActivity";
 import ScoreChart from "../../components/ScoreChart/ScoreChart"
 import InfoCard from '../InfoCard/InfoCard';
+import PropTypes from 'prop-types'
 
 export default function Dashboard({userId}) {
     return (
@@ -26,4 +27,6 @@ export default function Dashboard({userId}) {
     );
 }
 
- 
+ Dashboard.propTypes = {
+     userId : PropTypes.string
+ }

@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Develop an analytics dashboard with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+OpenClassrooms project 12.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+- [Node.js](https://nodejs.org/en/) v16.11.1
+- [Git](https://git-scm.com/)
+- [npm](https://www.npmjs.com/)
+- [React] (https://fr.reactjs.org/)
 
-### `npm start`
+## Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React v17.0.2 
+`$ npx create-react-app` 
+- react-dom v17.0.2
+- react-router-dom v6.2.2
+`$ npm install react-router-dom`
+- Recharts v2.1.9
+`$ npm install recharts`
+- PropTypes v15.8.1
+`$ npm install prop-types`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Install Backend
 
-### `npm test`
+Clone the backend repository:
+`git clone https://github.com/Babamibe/OluwabamisheAlao_12_16032022_Backend.git`
+Install dependencies:
+`npm install`
+Launch backend (port 3000 by default):
+`npm start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Frontend
 
-### `npm run build`
+Clone the frontend repository:
+`git clone https://github.com/Babamibe/OluwabamisheAlao_12_16032022.git`
+Install dependencies:
+`npm install`
+Launch frontend (port 3001):
+`npm start`
+Front-end available at [http://localhost:3001](http://localhost:3001)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Note
+- The API has active data for user ids 12 and 18 (default user 12)
+- [Figma source:](https://www.figma.com/file/BMomGVZqLZb811mDMShpLu/UI-design-Sportify-FR?node-id=1%3A2)
+- for devs, available endpoints:
+`http://localhost:3001/home/id` User dashboard
+`http://localhost:3001/user/id` User main info
+`http://localhost:3001/user/id/activity`User daily activity
+`http://localhost:3001/user/id/average-sessions` User average sessions
+`http://localhost:3001/user/id/today-score` User daily score
+`http://localhost:3001/user/id/activities` User perfomance
+`http://localhost:3001/user/id/key-data` User key data

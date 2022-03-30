@@ -1,6 +1,7 @@
 import React from 'react';
 import DailyActivityChart from '../DailyActivityChart/DailyActivityChart';
 import './DailyActivity.css'
+import PropTypes from 'prop-types'
 
 export default function DailyActivity({userId}) {
     
@@ -24,3 +25,6 @@ export default function DailyActivity({userId}) {
     );
 }
 
+DailyActivity.propTypes = {
+    userId : PropTypes.string
+}

@@ -2,7 +2,12 @@ import React from "react"
 
 const defaultAdress = "http://localhost:3000/user"
 
-
+/**
+ * Fetch data from API
+ * @param {String} id 
+ * @param {String} type 
+ * @returns {Array}
+ */
 
 export default function GetData(id, type) {
     const [data, setData] = React.useState([])
@@ -39,6 +44,12 @@ export default function GetData(id, type) {
     return {data, loading}
 }
 
+/**
+ * Choose API endpoint for fetching data
+ * @param {String} type 
+ * @param {String} id 
+ * @returns {String}
+ */
 function getEndpoint(type, id) {
     switch(type) {
         case "user":return `${id}`;
@@ -53,6 +64,12 @@ function getEndpoint(type, id) {
     }
 }
 
+/**
+ * Get specified data according to type
+ * @param {Array | String | Object} info 
+ * @param {String} type 
+ * @returns {Array|String|Object|Number|Undefined}
+ */
 function getInfoByType(info, type) {
     if(info) {
         switch(type) {
@@ -70,6 +87,12 @@ function getInfoByType(info, type) {
     return
 }
 
+/**
+ * Get the user's main data
+ * @param {Array} userData 
+ * @returns {Array | Object | Null}
+ */
+
 function getUserData(userData) {
     if(userData) {
         return userData.data
@@ -78,6 +101,11 @@ function getUserData(userData) {
     
 }
 
+/**
+ * Get user's first name
+ * @param {Array|Object} userData 
+ * @returns {String}
+ */
 function getfirstNameData(userData) {
     if(userData) {
         return userData.data.userInfos.firstName
@@ -86,6 +114,11 @@ function getfirstNameData(userData) {
     return "unknown user"
 }
 
+/**
+ * Get user's key data
+ * @param {Array|Object} userData 
+ * @returns {Object|Array}
+ */
 function getKeyData(userData) {
     if(!userData) {
         return {
@@ -98,6 +131,11 @@ function getKeyData(userData) {
     return userData    
 }
 
+/**
+ * Get user's daily score
+ * @param {Array|Object} userData 
+ * @returns {String | Number}
+ */
 function getScoreData(userData) {
     if(userData) {
         return userData.score || userData.todayScore
@@ -105,6 +143,11 @@ function getScoreData(userData) {
     return 0
 }
 
+/**
+ * Get user's daily activity data
+ * @param {Object | Array} userData 
+ * @returns {Object | Number | Array}
+ */
 function getActivityData(userData) {
     if(userData) {
         const formattedUserData = userData.map(item => {
@@ -123,6 +166,10 @@ function getActivityData(userData) {
     return defaultActivityData()
 }
 
+/**
+ * Default data for daily activity
+ * @returns {Array | Object}
+ */
 function defaultActivityData() {
     let date = [{day: 1}, {day:2}, {day:3}, {day:4}, {day:5}, {day:6}, {day:7}]
     date.map(item => {
@@ -131,6 +178,11 @@ function defaultActivityData() {
     return date
 }
 
+/**
+ * Get user's average session's data
+ * @param {Array|Object} userData 
+ * @returns {Array|Object}
+ */
 function getAverageSessionsData(userData) {
     if(userData) {
         let average = defaultAverageSessionsData()
@@ -143,6 +195,10 @@ function getAverageSessionsData(userData) {
     return defaultAverageSessionsData()
 }
 
+/**
+ * Default data for average sessions
+ * @returns {Array}
+ */
 function defaultAverageSessionsData() {
     const average = [
         {
@@ -178,6 +234,11 @@ function defaultAverageSessionsData() {
     return average
 }
 
+/**
+ * Get user's performance data
+ * @param {Array|Object} userData 
+ * @returns {Array|Object}
+ */
 function getPerformanceData(userData) {
     if(userData) {
         const activityKind = {
@@ -197,6 +258,10 @@ function getPerformanceData(userData) {
     
 }
 
+/**
+ * Default performance data
+ * @returns {Array}
+ */
 function defaultPerformanceData() {
     const activityKind = {
         1: 'Cardio',

@@ -5,7 +5,7 @@ import energy from '../../assets/energy.png'
 import chicken from '../../assets/chicken.png'
 import apple from '../../assets/apple.png'
 import cheeseburger from '../../assets/cheeseburger.png'
-import { PropTypes } from 'prop-types';
+import  PropTypes  from 'prop-types';
 
 export default function InfoCard({userId}) {
     const data = GetData(userId, "keyData")
@@ -22,6 +22,7 @@ export default function InfoCard({userId}) {
 }
 
 InfoCard.propTypes ={
-    userId : PropTypes.string
+    userId : PropTypes.string,
+    keyData : PropTypes.array
 }
 

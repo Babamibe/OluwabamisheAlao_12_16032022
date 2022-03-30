@@ -2,6 +2,7 @@ import React from 'react';
 import './DailyActivityChart.css'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import GetData from '../../services/API';
+import PropTypes from 'prop-types'
 
 const customTooltip = ({active, payload}) => {
   if(active && payload && payload.length) {
@@ -80,3 +81,10 @@ export default function DailyActivityChart({userId}) {
       );
 }
 
+DailyActivityChart.propTypes = {
+  activity : PropTypes.array,
+  minYaxisKg: PropTypes.number,
+  maxYaxisKg: PropTypes.number,
+  minYaxisKcal: PropTypes.number,
+  maxYaxisKcal: PropTypes.number
+}
