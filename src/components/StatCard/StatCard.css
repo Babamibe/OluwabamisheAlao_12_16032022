@@ -49,3 +49,9 @@
     font-size: 14px;
     color: #74798C;
 }
+
+@media screen and (max-width: 1300px) {
+    .statcard {
+        margin: 20px 0;
+    }
+}

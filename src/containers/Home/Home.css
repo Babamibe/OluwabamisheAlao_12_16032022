@@ -31,3 +31,24 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 1300px) {
+    /* .dashboard {
+        margin: 30px 30px;
+    } */
+
+    .stat--section {
+        flex-direction: column;
+    }
+
+    .info-card--section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .dashboard {
+        margin: 30px 30px;
+    }
+}

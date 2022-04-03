@@ -47,3 +47,10 @@
 .red {
     color: #E60000;
 }
+
+
+@media screen and (max-width: 1400px ) {
+    .daily-activity--section {
+        max-width: 100%;
+    }
+}
