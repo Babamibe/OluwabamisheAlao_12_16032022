@@ -5,7 +5,11 @@ import GetData from '../../services/API';
 import PropTypes from 'prop-types'
 
 
-
+/**
+ * Get performance data and create Radar chart
+ * @param {Object} data
+ * @param {Array} performance
+ */
 export default function ActivityTypeChart({userId}) {
     const data =GetData(userId, "performance")
     const performance = data.data
@@ -40,5 +44,5 @@ export default function ActivityTypeChart({userId}) {
 }
 
 ActivityTypeChart.propTypes = {
-    performance : PropTypes.array
+    userId : PropTypes.string.isRequired
 }

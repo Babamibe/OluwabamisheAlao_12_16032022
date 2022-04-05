@@ -3,6 +3,9 @@ import DailyActivityChart from '../DailyActivityChart/DailyActivityChart';
 import './DailyActivity.css'
 import PropTypes from 'prop-types'
 
+/**
+ * Create Daily activity section 
+ */
 export default function DailyActivity({userId}) {
     
     return (
@@ -26,5 +29,5 @@ export default function DailyActivity({userId}) {
 }
 
 DailyActivity.propTypes = {
-    userId : PropTypes.string
+    userId : PropTypes.string.isRequired
 }

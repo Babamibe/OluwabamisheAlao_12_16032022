@@ -28,5 +28,5 @@ export default function Dashboard({userId}) {
 }
 
  Dashboard.propTypes = {
-     userId : PropTypes.string
+     userId : PropTypes.string.isRequired
  }

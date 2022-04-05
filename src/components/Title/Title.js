@@ -3,6 +3,11 @@ import './Title.css'
 import GetData from '../../services/API'
 import {PropTypes} from 'prop-types'
 
+/**
+ * Get first name details from the API and create title
+ * @param {Object} data
+ * @param {Array} firstName
+ */
 export default function Title(props) {
     const data = GetData(props.user, "firstName")
     const firstName = data.data

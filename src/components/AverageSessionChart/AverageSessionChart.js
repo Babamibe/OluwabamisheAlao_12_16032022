@@ -16,6 +16,11 @@ const customTooltip = ({active, payload}) => {
     return null
   }
 
+  /**
+   * Receive average session data and create line chart
+   * @param {Object} info
+   * @param {Array} sessions 
+   */
  export default function AverageSessionChart({userId}) {
     const info = GetData(userId, "average-sessions")
     const sessions = info.data
@@ -70,6 +75,5 @@ const customTooltip = ({active, payload}) => {
 }
 
 AverageSessionChart.propTypes = {
-  sessions : PropTypes.array,
-  userId : PropTypes.string
+  userId : PropTypes.string.isRequired
 }

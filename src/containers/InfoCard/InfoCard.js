@@ -7,6 +7,11 @@ import apple from '../../assets/apple.png'
 import cheeseburger from '../../assets/cheeseburger.png'
 import  PropTypes  from 'prop-types';
 
+/**
+ * Get keydata from API and create info card section
+ * @param {Object} data 
+ * @param {Array} keyData 
+ */
 export default function InfoCard({userId}) {
     const data = GetData(userId, "keyData")
     const keyData = data.data
@@ -22,7 +27,6 @@ export default function InfoCard({userId}) {
 }
 
 InfoCard.propTypes ={
-    userId : PropTypes.string,
-    keyData : PropTypes.array
+    userId : PropTypes.string.isRequired
 }
 

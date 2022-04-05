@@ -16,7 +16,15 @@ const customTooltip = ({active, payload}) => {
   return null
 }
 
-
+/**
+ * Get daily activity data from API and create a bar chart
+ * @param {Object} data
+ * @param {Array} activity
+ * @param {Number} minYaxisKg
+ * @param {Number} maxYaxisKg
+ * @param {Number} minYaxisKcal
+ * @param {Number} maxYaxisKcal
+ */
 
 export default function DailyActivityChart({userId}) {
 
@@ -82,9 +90,5 @@ export default function DailyActivityChart({userId}) {
 }
 
 DailyActivityChart.propTypes = {
-  activity : PropTypes.array,
-  minYaxisKg: PropTypes.number,
-  maxYaxisKg: PropTypes.number,
-  minYaxisKcal: PropTypes.number,
-  maxYaxisKcal: PropTypes.number
+  userId : PropTypes.string.isRequired
 }

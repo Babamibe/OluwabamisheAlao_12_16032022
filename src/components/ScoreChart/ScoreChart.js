@@ -6,7 +6,12 @@ import PropTypes from 'prop-types'
 
 
 
-
+/**
+ * get daily score from API and create Pie Chart
+ * @param {Object} data
+ * @param {Array} score 
+ * @param {Array} scoreData 
+ */
 export default function ScoreChart({userId}) {
     const data = GetData(userId, "score")
     const score = data.data
@@ -49,6 +54,5 @@ export default function ScoreChart({userId}) {
 }
 
 ScoreChart.propTypes = {
-    score : PropTypes.array,
-    userId : PropTypes.string
+    userId : PropTypes.string.isRequired
 }
